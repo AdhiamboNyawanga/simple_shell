@@ -25,7 +25,7 @@ void shell_1_0(char *cmd, char **env)
 		{
 			_puts(env[x]);
 			_putchar('\n');
-			i++;
+			x++;
 		}
 	}
 }
@@ -78,7 +78,7 @@ void	_executecmd(char **cmd, int argc, char **argv, char **env)
 	while (cmd[x] != NULL)
 	{
 		free(cmd[x]);
-		i++;
+		x++;
 	}
 	_puts("($) ");
 	UNUSED(argc);
