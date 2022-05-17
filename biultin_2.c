@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 /**
  * checker - Will check to see whether we are dealing with a builtin or not
  * @check: Figures out what to execute
