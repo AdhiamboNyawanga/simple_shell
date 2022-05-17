@@ -2,15 +2,15 @@
 /**
 * _strlen - function
 *
-* @s: the chain
+* @i: the chain
 * Return: Always 0.
 */
 
-int _strlen(char *s)
+int _strlen(char *i)
 {
 
-	if (*s == '\0')
+	if (*i == '\0')
 		return (0);
 	else
-		return (1 + _strlen(s + 1));
+		return (1 + _strlen(i + 1));
 }
