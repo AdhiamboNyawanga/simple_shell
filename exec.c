@@ -19,11 +19,11 @@ void shell_1_0(char *cmd, char **env)
 {
 	if (_strcmp("env", cmd) == 0)
 	{
-		int i = 0;
+		int x = 0;
 
-		while (env[i] != NULL)
+		while (env[x] != NULL)
 		{
-			_puts(env[i]);
+			_puts(env[x]);
 			_putchar('\n');
 			i++;
 		}
@@ -46,7 +46,7 @@ void	_executecmd(char **cmd, int argc, char **argv, char **env)
 	pid_t pid = 0;
 	int exec_ret = 0;
 	char *cmdsrc;
-	int i = 0;
+	int x = 0;
 
 	shell_1_0(cmd[0], env);
 	cmdsrc = (char *) malloc((_strlen(cmd[0]) + 6) * sizeof(char));
@@ -75,9 +75,9 @@ void	_executecmd(char **cmd, int argc, char **argv, char **env)
 		wait(&status);
 	}
 
-	while (cmd[i] != NULL)
+	while (cmd[x] != NULL)
 	{
-		free(cmd[i]);
+		free(cmd[x]);
 		i++;
 	}
 	_puts("($) ");
