@@ -25,7 +25,7 @@ void shell_1_0(char *cmd, char **env)
 		{
 			_puts(env[x]);
 			_putchar('\n');
-			i++;
+			x++;
 		}
 	}
 }
