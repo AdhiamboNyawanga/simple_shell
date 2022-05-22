@@ -1,5 +1,4 @@
 #include "shell.h"
-
 char *_strchr(char *s, char c);
 int _strspn(char *s, char *accept);
 int _strcmp(char *s1, char *s2);
@@ -53,7 +52,6 @@ int _strspn(char *s, char *accept)
 	}
 	return (bytes);
 }
-
 /**
  * _strcmp - Compares two strings.
  * @s1: The first string to be compared.
