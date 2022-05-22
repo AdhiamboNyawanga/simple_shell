@@ -6,6 +6,7 @@
 #include <signal.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <sys/wait.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
@@ -134,3 +135,4 @@ void help_history(void);
 int proc_file_commands(char *file_path, int *exe_ret);
 
 #endif
+
